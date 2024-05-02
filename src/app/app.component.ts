@@ -13,5 +13,5 @@ import { AllArticleComponent } from './shared/layouts/all-article/all-article.co
     imports: [RouterOutlet, HeadersComponent, FooterComponent, AllArticleComponent]
 })
 export class AppComponent {
-  title = 'angulEcommerce';
+  title = 'front-end_coindebaby';
 }
