@@ -13,5 +13,5 @@ import { FooterComponent } from "./shared/layouts/footer/footer.component";
     imports: [RouterOutlet, HeadersComponent, FooterComponent]
 })
 export class AppComponent {
-  title = 'angulEcommerce';
+  title = 'front-end_coindebaby';
 }
