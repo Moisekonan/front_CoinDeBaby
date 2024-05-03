@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeadersComponent } from './shared/layouts/headers/headers.component';
 import { FooterComponent } from "./shared/layouts/footer/footer.component";
-import { AllArticleComponent } from './shared/layouts/all-article/all-article.component';
+
 
 
 @Component({
@@ -10,7 +10,7 @@ import { AllArticleComponent } from './shared/layouts/all-article/all-article.co
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HeadersComponent, FooterComponent, AllArticleComponent]
+    imports: [RouterOutlet, HeadersComponent, FooterComponent]
 })
 export class AppComponent {
   title = 'angulEcommerce';

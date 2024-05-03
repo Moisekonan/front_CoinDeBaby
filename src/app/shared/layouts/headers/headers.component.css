@@ -1,0 +1,32 @@
+.aa{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+#dehors {
+    
+    position: relative;
+  
+}
+
+#premi {
+    display: none;
+}
+/* #premi1:hover {
+    visibility: visible;
+    background-color: white;
+    position: absolute;
+    border: 1px solid gainsboro;
+    right: -286px;
+    top: 0;
+} */
+#premi1:hover #premi{
+    visibility: visible;
+    display: block;
+    background-color: white;
+    position: absolute;
+    border: 1px solid gainsboro;
+    right: -286px;
+    top: 0;
+}
