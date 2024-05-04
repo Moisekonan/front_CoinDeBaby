@@ -3,9 +3,10 @@ import { HomeComponent } from './views/home/home.component';
 import { ShopComponent } from './views/shop/shop.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { AboutComponent } from './views/about/about.component';
-import { ProfilComponent } from './views/profil/profil.component';
-import { PanierComponent } from './views/panier/panier.component';
+
 import { DetailProductsComponent } from './views/detail-products/detail-products.component';
+import { CartsComponent } from './views/carts/carts.component';
+import { ProfileComponent } from './views/profile/profile.component';
 
 export const routes: Routes = [
     {
@@ -21,10 +22,10 @@ export const routes: Routes = [
         path: 'about',component: AboutComponent}
     ,
     {
-        path: 'panier',component: PanierComponent}
+        path: 'panier',component: CartsComponent}
     ,
     {
-        path: 'profil',component: ProfilComponent}
+        path: 'profil',component: ProfileComponent}
     ,
     {
         path: 'detail-products',component: DetailProductsComponent}

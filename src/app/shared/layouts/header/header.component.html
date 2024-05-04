@@ -1,0 +1,2768 @@
+<div class="w-full h-9 bg-indigo-800 flex items-center justify-center">
+  <p class="text-xs text-white">Nous livrons partout en Cote d'ivoire</p>
+</div>
+<div class="w-full h-auto bg-white xl:flex items-center justify-center hidden">
+  <div
+    class="lg:w-full max-w-7xl lg:h-9 lg:flex lg:items-center lg:justify-center md:pl-16 md:pr-16"
+  >
+    <div class="w-2/5 h-full flex items-center justify-start">
+      <a
+        [routerLink]="['/profil']"
+        class="text-xs text-black pr-3 hover:text-orange-700"
+        >Mon compte
+      </a>
+      <a
+        [routerLink]="['/panier']"
+        class="text-xs text-black hover:text-orange-700"
+        >Validation de commande
+      </a>
+    </div>
+    <div class="w-3/5 h-full flex">
+      <div class="w-2/5 h-full flex items-center justify-start pr-3 border-r">
+        <p class="text-xs text-black">
+          100% Securisé, livré rapidement chez vous
+        </p>
+      </div>
+      <div class="w-3/5 h-full flex items-center justify-start pl-3">
+        <p class="text-xs text-black">
+          Besoin d'aide ? Contactez nous au :
+          <span><a href="#" class="text-orange-700">+225 2722246177</a></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <a [routerLink]="['/']">Home</a> -->
+<!-- position sticky -->
+<!-- <input id="draftww" class="peer/draftww hidden" type="radio" name="status" checked />  
+<input id="publishedqou" class="peer/publishedqou hidden" type="radio" name="status" checked /> -->
+<div
+  class="w-full h-auto bg-white flex items-center justify-center top-0 sticky border-t z-50"
+>
+  <div
+    class="w-full max-w-7xl md:h-28 h-16 bg-white flex items-center justify-between"
+  >
+    <div
+      class="w-1/7 md:w-14 pl-3 h-full flex items-center justify-center md:justify-end xl:hidden"
+    >
+      <!-- <label for="publishedqou"  class="peer-checked/publishedqou:text-sky-500">
+                <img class="w-5 h-5 md:w-5 md:h-5 md:mr-3 " src="../../../../assets/images/icons/menu.png" alt="">
+            </label> -->
+      <img
+        class="w-5 h-5 md:w-5 md:h-5 md:mr-3"
+        src="../../../../assets/images/icons/menu.png"
+        alt=""
+      />
+    </div>
+    <div class="w-20 xl:w-1/5 h-full bg-white flex items-center justify-center">
+      <a [routerLink]="['/']" class="decoration-none">
+        <img
+          class="w-3/4 h-2/4 md:h-1/4 xl:w-20 xl:h-16"
+          src="../../../../assets/images/icons/logo-1.png"
+          alt=""
+        />
+      </a>
+    </div>
+    <div class="hidden md:flex md:w-11/12 md:h-full md:bg-red-400">
+      <div class="w-11/12 h-full bg-white flex items-center justify-center">
+        <input
+          type="text"
+          name=""
+          id=""
+          class="w-full h-1/2 rounded-tl-md rounded-bl-md bg-neutral-100 pl-6 outline-none"
+          placeholder="Search for products..."
+        />
+        <button
+          class="w-1/7 h-1/2 bg-neutral-100 rounded-tr-md rounded-br-md pr-5"
+        >
+          <img
+            class="w-7 h-6"
+            src="../../../../assets/images/icons/serach.png"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="w-1/12 h-full bg-white flex items-center justify-center">
+        <a [routerLink]="['/profil']" class="decoration-none">
+          <div
+            class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center"
+          >
+            <img
+              class="w-2/4 h-2/4"
+              src="../../../../assets/images/icons/profil.png"
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      class="w-auto pr-7 lg:w-auto h-full bg-white flex items-center justify-center md:justify-start"
+    >
+      <h1 class="pr-3">0CFA</h1>
+      <div class="w-10 h-10 relative flex items-center justify-center">
+        <a [routerLink]="['/panier']" class="decoration-none">
+          <img
+            class="w-6 h-6"
+            src="../../../../assets/images/icons/panier.png"
+            alt=""
+          />
+        </a>
+        <div
+          class="bg-red-600 w-5 h-5 rounded-full flex items-center justify-center absolute top-0 right-0"
+        >
+          <p class="text-white">0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <div
+    class="w-full h-auto bg-white hidden xl:flex items-center justify-center"
+  >
+    <div class="w-full max-w-7xl h-14 xl:flex border-b">
+      <!-- [@collapseMenu]="state" -->
+      <div class="w-1/4 h-full bg-white flex items-center justify-end">
+        <!-- <input id="draft" class="peer/draft" type="radio" name="status" checked />
+            <label for="draft" class="peer-checked/draft:text-sky-500">
+            <div class="w-3/4 h-full pb-1 flex flex-col items-center justify-center relative ">
+                <div class="w-full h-full bg-orange-700 rounded-l-3xl rounded-r-3xl flex items-center justify-between pl-5 pr-5" >
+
+                    <img class="w-4 h-4 invert" src="../../../../assets/images/icons/menu.png" (click)="expand()" alt="">
+                    <h1 class="font-bold text-white">ALL CATEGORIES</h1>
+                    <img class="w-4 h-4 invert" src="../../../../assets/images/icons/fleche.png" alt="">
+                </div>
+                <div class="w-2/3 h-3 bg-slate-300 absolute bottom-0 rounded-l-3xl rounded-r-3xl">
+                    <p style="font-size: 0.6rem;" class=" text-gray-700 text-center">TOTAL 12534 PRODUCTS</p>
+                </div>
+            </div>
+            </label> -->
+        <!-- 
+            <input id="published" class="peer/published" type="radio" name="status" checked />
+            <label for="published"  class="peer-checked/published:text-sky-500">
+            <div class="w-3/4 h-full pb-1 flex flex-col items-center justify-center relative ">
+                <div class="w-full h-full bg-orange-700 rounded-l-3xl rounded-r-3xl flex items-center justify-between pl-5 pr-5" >
+
+                    <img class="w-4 h-4 invert" src="../../../../assets/images/icons/menu.png" (click)="expand()" alt="">
+                    <h1 class="font-bold text-white">ALL CATEGORIES</h1>
+                    <img class="w-4 h-4 invert" src="../../../../assets/images/icons/fleche.png" alt="">
+                </div>
+                <div class="w-2/3 h-3 bg-slate-300 absolute bottom-0 rounded-l-3xl rounded-r-3xl">
+                    <p style="font-size: 0.6rem;" class=" text-gray-700 text-center">TOTAL 12534 PRODUCTS</p>
+                </div>
+            </div>
+            </label> -->
+
+        <!-- <div class="hidden peer-checked/draft:block">Drafts are only visible to administrators.</div>
+            <div class="hidden peer-checked/published:block">Your post will be publicly visible on your site.</div> -->
+        <!-- <fieldset>
+                <legend>Published status</legend>
+              
+                <input id="draft" class="peer/draft" type="radio" name="status" checked />
+                <label for="draft" class="peer-checked/draft:text-sky-500">Draft</label>
+              
+                <input id="published" class="peer/published" type="radio" name="status" />
+                <label for="published" class="peer-checked/published:text-sky-500">Published</label>
+              
+                <div class="hidden peer-checked/draft:block">Drafts are only visible to administrators.</div>
+                <div class="hidden peer-checked/published:block">Your post will be publicly visible on your site.</div>
+              </fieldset> -->
+      </div>
+      <div class="w-3/4 h-full">
+        <nav class="w-full h-full flex items-center justify-end">
+          <ul class="w-full h-full flex items-center justify-end pr-5">
+            <li>
+              <a
+                [routerLink]="['/']"
+                class="p-3 bg-gray-50 rounded-l-3xl rounded-r-3xl text-orange-600 text-sm"
+                >ACCEUIL</a
+              >
+            </li>
+            <li>
+              <a
+                [routerLink]="['/shop']"
+                class="text-black p-3 hover:bg-gray-50 rounded-l-3xl rounded-r-3xl hover:text-orange-600 text-sm"
+                >BOUTIQUE</a
+              >
+            </li>
+            <li>
+              <a
+                [routerLink]="['/contact']"
+                class="text-black p-3 hover:bg-gray-50 rounded-l-3xl rounded-r-3xl hover:text-orange-600 text-sm"
+                >CONTACT</a
+              >
+            </li>
+            <li>
+              <a
+                [routerLink]="['/about']"
+                class="text-black p-3 hover:bg-gray-50 rounded-l-3xl rounded-r-3xl hover:text-orange-600 text-sm"
+                >A PROPOS</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="aa" >
+    
+    <img class="w-5 h-5 md:w-5 md:h-5 md:mr-3 " src="../../../../assets/images/icons/menu.png" alt="" click="expand()">
+</div> -->
+  <!-- deroulant lg -->
+  <!-- xl:flex -->
+  <!-- [@collapseMenu]="state" -->
+  <div
+    class="xl:w-full xl:h-auto xl:flex xl:pb-10 xl:bg-transparent xl:justify-center hidden relative"
+  >
+    <div class="w-full max-w-7xl h-auto pb-10 bg-transparent pl-20">
+      <!-- liste all categories -->
+      <div class="w-72 h-auto bg-white pt-5 absolute" id="dehors">
+        <!-- border-r border-slate-300 border-l border-b -->
+
+        <!-- <input
+          id="draft"
+          class="peer/draft"
+          type="radio"
+          name="status"
+          checked
+        /> -->
+
+        <!-- <input
+          id="published"
+          class="peer/published"
+          type="radio"
+          name="status"
+          checked
+        /> -->
+
+        <div
+          class="w-3/4 h-14 pb-1 flex flex-col items-center justify-center relative mb-10"
+        >
+          <div
+            class="w-full h-full bg-orange-700 rounded-l-3xl rounded-r-3xl flex items-center justify-between pl-5 pr-5"
+          >
+            <label for="" class="peer-checked/published:text-sky-500">
+              <img
+                class="w-4 h-4 invert"
+                src="../../../../assets/images/icons/menu.png"
+                alt=""
+              />
+            </label>
+            <h1 class="font-bold text-white">ALL CATEGORIES</h1>
+            <label for="" class="peer-checked/draft:text-sky-500">
+              <img
+                class="w-4 h-4 invert"
+                src="../../../../assets/images/icons/fleche.png"
+                alt=""
+              />
+            </label>
+          </div>
+          <div
+            class="w-2/3 h-3 bg-slate-300 absolute bottom-0 rounded-l-3xl rounded-r-3xl"
+          >
+            <p style="font-size: 0.6rem" class="text-gray-700 text-center">
+              TOTAL 12534 PRODUCTS
+            </p>
+          </div>
+        </div>
+
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Auto et moto
+              </h1>
+
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece pour voiture
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire exterieur
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- liste Auto et moto -->
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <!-- liste Auto et moto -->
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Beauté, Santé et Cheveux
+              </h1>
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Beauté, Santé et Cheveux
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire exterieur
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- liste Auto et moto -->
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <!-- liste Auto et moto -->
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Bijoux et montres
+              </h1>
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece pour voiture
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire exterieur
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- liste Auto et moto -->
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <!-- liste Auto et moto -->
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Electroniques
+              </h1>
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece pour voiture
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire exterieur
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- liste Auto et moto -->
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <!-- liste Auto et moto -->
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Jouer et enfant
+              </h1>
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece pour voiture
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire exterieur
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- liste Auto et moto -->
+
+        <!-- liste Auto et moto -->
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Maison, animaux et electromenager
+              </h1>
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece pour voiture
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire exterieur
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- liste Auto et moto -->
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <!-- liste Auto et moto -->
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Mode femmes
+              </h1>
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece pour voiture
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire exterieur
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- liste Auto et moto -->
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <!-- liste Auto et moto -->
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Mode hommes
+              </h1>
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece pour voiture
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire exterieur
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- liste Auto et moto -->
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <!-- liste Auto et moto -->
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Ordinateur, Bureau et sécurité
+              </h1>
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece pour voiture
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire exterieur
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- liste Auto et moto -->
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <!-- liste Auto et moto -->
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Outils bricolage
+              </h1>
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece pour voiture
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire exterieur
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- liste Auto et moto -->
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <!-- liste Auto et moto -->
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Sac et chaussure
+              </h1>
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Sac et chaussure
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5 pb-10">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- liste Auto et moto -->
+        <div id="premi1" class="hidden peer-checked/draft:block">
+          <!-- liste Auto et moto -->
+          <div class="w-full h-8 pl-5 pr-5 border-r border-l">
+            <div
+              class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-slate-600 hover:text-orange-600">
+                Sport et Activité plein air
+              </h1>
+              <img
+                class="w-4 h-4"
+                src="../../../../assets/images/icons/inf.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-5/6 pb-5" id="premi">
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece pour voiture
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Piece et accessoire moto
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Outils et entretien
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Electronique embarqué
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire exterieur
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div class="w-full h-8 pl-10 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <a href=""
+                  ><h1 class="text-sm text-black hover:text-orange-600">
+                    Accessoire interieur
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- liste Auto et moto -->
+        <div
+          class="w-full h-8 pl-5 pr-5 hidden peer-checked/draft:block border-r border-l"
+        >
+          <div
+            class="w-full h-8 rounded-l-xl rounded-r-xl flex items-center justify-between"
+          >
+            <h1 class="text-sm text-slate-600 hover:text-orange-600">
+              Tenus enfants
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- fin liste all categories -->
+    </div>
+  </div>
+
+  <div
+  id="carouselExampleCrossfade"
+  class="relative"
+  data-twe-carousel-init
+  data-twe-ride="carousel">
+  <!--Carousel indicators-->
+  <div
+    class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+    data-twe-carousel-indicators>
+    <button
+      type="button"
+      data-twe-target="#carouselExampleCrossfade"
+      data-twe-slide-to="0"
+      data-twe-carousel-active
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-current="true"
+      aria-label="Slide 1"></button>
+    <button
+      type="button"
+      data-twe-target="#carouselExampleCrossfade"
+      data-twe-slide-to="1"
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-label="Slide 2"></button>
+    <button
+      type="button"
+      data-twe-target="#carouselExampleCrossfade"
+      data-twe-slide-to="2"
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-label="Slide 3"></button>
+  </div>
+
+  <!--Carousel items-->
+  <div
+    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+    <!--First item-->
+    <div
+      class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-fade
+      data-twe-carousel-item
+      data-twe-carousel-active>
+      <img
+        src="/src/assets/images/"
+        class="block w-full"
+        alt="Wild Landscape" />
+    </div>
+    <!--Second item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-fade
+      data-twe-carousel-item>
+      <img
+        src="assets/images/hero/aff2.jpeg"
+        class="block w-full"
+        alt="Camera" />
+    </div>
+    <!--Third item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-fade
+      data-twe-carousel-item>
+      <img
+        src="assets/images/hero/aff3.jpeg"
+        class="block w-full"
+        alt="Exotic Fruits" />
+    </div>
+  </div>
+
+ 
+  <button
+    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-twe-target="#carouselExampleCrossfade"
+    data-twe-slide="prev">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Previous</span
+    >
+  </button>
+
+  <button
+    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-twe-target="#carouselExampleCrossfade"
+    data-twe-slide="next">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Next</span
+    >
+  </button>
+</div>
+
+  <!-- <div
+    class="w-full h-52 md:h-80 xl:h-96 bg-white flex items-center justify-center"
+  >
+    <div class="w-full h-full max-w-7xl bg-white flex xl:pl-20">
+      <div class="xl:w-96 xl:h-full w-0 h-0 bg-white"></div>
+      <div class="w-full h-full bg-white pr-5 pl-5">
+        <div
+          id="imagechange"
+          class="flex items-center justify-between pl-5 pr-5"
+        >
+         
+          
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <button (click)="onToggle()">Alerte</button>
+<div [@collapseMenu]="isOpen? 'open' : 'closed'" >
+   
+</div> -->
+  <div class="w-full h-52"></div>
+  <input
+    id="draftww"
+    class="peer/draftww hidden"
+    type="radio"
+    name="status"
+    checked
+  />
+  <input
+    id="publishedqou"
+    class="peer/publishedqou hidden"
+    type="radio"
+    name="status"
+    checked
+  />
+  <label for="publishedq" class="peer-checked/publishedq:text-sky-500">
+    <img
+      class="w-4 h-4 invert"
+      src="../../../../assets/images/icons/menu.png"
+      alt=""
+    />
+  </label>
+  <div
+    class="w-full h-full fixed top-0 z-50 xl:hidden peer-checked/draftww:hidden"
+    style="background-color: rgba(0, 0, 0, 0.279)"
+  >
+    <div class="w-full h-full overflow-scroll">
+      <div class="h-full bg-white w-96">
+        <div class="w-full h-32 flex justify-between items-center pr-5 pl-5">
+          <img
+            class="w-20 h-16"
+            src="../../../../assets/images/icons/logo-1.png"
+            alt=""
+          />
+          <div
+            class="w-6 h-6 rounded-full bg-gray-300 flex items-center justify-center"
+          >
+            <label for="draftww" class="peer-checked/draftww:text-sky-500">
+              <img
+                class="w-4 h-4 invert"
+                src="../../../../assets/images/icons/croix.png"
+                alt=""
+              />
+            </label>
+          </div>
+        </div>
+        <input
+          id="draftw"
+          class="peer/draftw hidden"
+          type="radio"
+          name="status"
+          checked
+        />
+
+        <input
+          id="publishedq"
+          class="peer/publishedq hidden"
+          type="radio"
+          name="status"
+          checked
+        />
+        <div class="w-full h-14 pl-5 pr-5">
+          <div
+            class="w-full h-14 bg-sky-500 rounded-l-xl rounded-r-xl flex items-center justify-between pl-5 pr-5"
+          >
+            <label
+              for="publishedq"
+              class="peer-checked/publishedq:text-sky-500"
+            >
+              <img
+                class="w-4 h-4 invert"
+                src="../../../../assets/images/icons/menu.png"
+                alt=""
+              />
+            </label>
+            <h1 class="font-bold text-white">ALL CATEGORIES</h1>
+            <label for="draftw" class="peer-checked/draftw:text-sky-500">
+              <img
+                class="w-4 h-4 invert"
+                src="../../../../assets/images/icons/fleche.png"
+                alt=""
+              />
+            </label>
+          </div>
+        </div>
+        <!-- liste all categories -->
+        <div
+          class="w-full h-auto pb-10 bg-white hidden peer-checked/draftw:block"
+        >
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto" id="premie1">
+            <!-- <input id="draftpre" class="peer/draftpre " type="radio" name="status" checked /> -->
+            <!-- liste Auto et moto -->
+            <div class="w-full h-14 pl-5 pr-5">
+              <div
+                class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+              >
+                <h1 class="text-sm text-black hover:text-orange-600">
+                  Téléphones et télécommunications
+                </h1>
+
+                <img
+                  class="w-4 h-4"
+                  src="../../../../assets/images/icons/fleche.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- liste Auto et moto -->
+            <div class="w-full h-auto pb-5" id="premie">
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece pour voiture
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Piece et accessoire moto
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Outils et entretien
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Electronique embarqué
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire exterieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+              <div class="w-full h-8 pl-10 pr-5">
+                <div
+                  class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+                >
+                  <a href=""
+                    ><h1 class="text-sm text-black hover:text-orange-600">
+                      Accessoire interieur
+                    </h1></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- liste Auto et moto -->
+          <div class="w-full h-14 pl-5 pr-5">
+            <div
+              class="w-full h-14 rounded-l-xl rounded-r-xl flex items-center justify-between"
+            >
+              <h1 class="text-sm text-black hover:text-orange-600">
+                Tenus enfants
+              </h1>
+            </div>
+          </div>
+        </div>
+        <!-- fin liste all categories -->
+        <div
+          class="w-full h-auto bg-white pl-5 pr-5 pt-5 pb-5 border-b border-gray-100"
+        >
+          <p class="text-sm text-gray-300">Site de navigation</p>
+        </div>
+        <div
+          class="w-full h-auto bg-white pl-5 pr-5 pt-4 pb-4 border-b border-gray-100"
+        >
+          <a [routerLink]="['/']"><p class="text-sm text-black">Acceuil</p></a>
+        </div>
+        <div
+          class="w-full h-auto bg-white pl-5 pr-5 pt-4 pb-4 border-b border-gray-100"
+        >
+          <a [routerLink]="['/shop']"
+            ><p class="text-sm text-black">Boutique</p></a
+          >
+        </div>
+        <div
+          class="w-full h-auto bg-white pl-5 pr-5 pt-4 pb-4 border-b border-gray-100"
+        >
+          <a [routerLink]="['contact']"
+            ><p class="text-sm text-black">Contact</p></a
+          >
+        </div>
+        <div
+          class="w-full h-auto bg-white pl-5 pr-5 pt-4 pb-4 border-b border-gray-100"
+        >
+          <a [routerLink]="['/about']"
+            ><p class="text-sm text-black">A propos</p></a
+          >
+        </div>
+        <div
+          class="w-full h-auto bg-white pl-5 pr-5 pt-20 pb-5 border-b border-gray-100"
+        >
+          <p class="text-sm text-gray-300">Copyright 2023 © kks-technologies</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
